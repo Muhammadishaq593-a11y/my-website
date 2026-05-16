@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Business Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Navbar */
+nav{
+    background:#0d1b2a;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h1{
+    color:white;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00b4d8;
+}
+
+/* Hero Section */
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200') center/cover;
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h2{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.btn{
+    padding:12px 25px;
+    background:#00b4d8;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0077b6;
+}
+
+/* Services */
+.services{
+    padding:70px 50px;
+    text-align:center;
+}
+
+.services h2{
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+.service-boxes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.box{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.box:hover{
+    transform:translateY(-10px);
+}
+
+/* About */
+.about{
+    background:#e9ecef;
+    padding:70px 50px;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:20px;
+}
+
+/* Contact */
+.contact{
+    padding:70px 50px;
+    text-align:center;
+}
+
+.contact form{
+    max-width:500px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact button{
+    padding:12px 25px;
+    border:none;
+    background:#0d1b2a;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.contact button:hover{
+    background:#1b263b;
+}
+
+/* Footer */
+footer{
+    background:#0d1b2a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:10px;
+    }
+
+    .hero-content h2{
+        font-size:35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h1>MyBusiness</h1>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <h2>Grow Your Business With Us</h2>
+        <p>Professional Business Solutions For Your Company</p>
+        <a href="#" class="btn">Get Started</a>
+    </div>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+    <h2>Our Services</h2>
+
+    <div class="service-boxes">
+
+        <div class="box">
+            <h3>Web Design</h3>
+            <p>Modern and responsive website design.</p>
+        </div>
+
+        <div class="box">
+            <h3>Marketing</h3>
+            <p>Digital marketing solutions for your business.</p>
+        </div>
+
+        <div class="box">
+            <h3>Branding</h3>
+            <p>Create a powerful brand identity.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+        We help companies grow faster with modern business strategies,
+        web development, and digital marketing services.
+    </p>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea rows="5" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 MyBusiness | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
